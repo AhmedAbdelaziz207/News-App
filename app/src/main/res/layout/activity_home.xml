@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity">
+
+       <com.google.android.material.appbar.AppBarLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/appbar_shape"
+           >
+           <androidx.appcompat.widget.Toolbar
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <TextView
+                   android:id="@+id/appbar_txt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="News App"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="22sp"
+                   android:textColor="@color/white"
+                   />
+               <ImageView
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/ic_menu"
+                   android:layout_gravity="center_vertical"
+                   />
+
+
+           </androidx.appcompat.widget.Toolbar>
+
+       </com.google.android.material.appbar.AppBarLayout>
+
+
+<include layout="@layout/activity_home_content"
+    android:id="@+id/content"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
